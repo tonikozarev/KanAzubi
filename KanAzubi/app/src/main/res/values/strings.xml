@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">KanAzubi</string>
+
+    <string name="iv_logo"> </string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="tv_login">Anmelden</string>
+    <string name="et_email">Email Adresse</string>
+    <string name="et_password">Passwort</string>
+    <string name="loginBtn">Anmelden</string>
+    <string name="goToRegisterBtn">Registrieren</string>
+
+    <string name="title_activity_register">Register</string>
+    <string name="tv_register">Registrieren</string>
+    <string name="addEmail">Email Adresse</string>
+    <string name="addName">Name</string>
+    <string name="addPassword">Passwort</string>
+    <string name="confirmPassword">Passwort bestätigen</string>
+    <string name="registerBtn">Registrieren</string>
+    <string name="goToLoginBtn">Anmelden jetzt</string>
+
+    <string name="title_activity_menu">Menü</string>
+    <string name="tv_menu">Menü</string>
+    <string name="idMenu">*ID*</string>
+    <string name="nameMenu">*Name*</string>
+    <string name="searchBtn">Suchen</string>
+    <string name="logoutBtn">Abmelden</string>
+    <string name="statusText">Status</string>
+    <string-array name="status">
+        <item>Offen</item>
+        <item>In Bearbeitung</item>
+        <item>Erledigt</item>
+    </string-array>
+    <string name="teamText">Team</string>
+    <string-array name="team">
+        <item>Technik</item>
+        <item>Messe</item>
+        <item>Marketing</item>
+        <item>Software</item>
+    </string-array>
+
+    <string name="title_activity_list">Liste</string>
+    <string name="emptyList">Die Liste ist leer</string>
+    <string name="listResult">Liste</string>
+
+    <string name="title_activity_task">Task</string>
+    <string name="taskTitle">Titel</string>
+    <string name="taskReleased">Veröffentlicht seit:..</string>
+    <string name="taskDescr">Beschreibung</string>
+    <string name="taskTeam">Team: Marketing</string>
+    <string name="taskStatus">Status: In Bearbeitung</string>
+    <string name="joinTaskBtn">Annehmen/In Bearbeitung/Erledigt</string>
+
+    <string name="title_activity_admin">Admin</string>
+    <string name="et_taskTitle">Titel</string>
+    <string name="et_taskReleased">Datum hier</string>
+    <string name="et_taskDescr">Beschreibung</string>
+    <string name="et_taskTeam">Team: ..</string>
+    <string name="et_taskStatus">Status: Offen</string>
+    <string name="addTaskBtn">Hinzufügen</string>
+
+    <string name="Tests">Tests</string>
+    <string name="successfulLogin">Erfolgreich angemeldet!</string>
+    <string name="incorrectEmail">Email ist invalid!</string>
+    <string name="incorrectPassword">Passwort ist falsch!</string>
+    <string name="emptyEmailPassword">Email/Passwort ist leer!</string>
+    <string name="notEnoughCharacters">Passwort ist falsch!</string>
+    <string name="successfulRegister">Benutzer wurde erstellt!</string>
+    <string name="registerEmailExists">Dieser Email wurde schon benutzt!</string>
+    <string name="registerInvalidEmail">Email ist nicht valid!</string>
+    <string name="registerNotMatchingPasswords">Passwörter stimmen nicht überein!</string>
+    <string name="registerEmptyFields">Nicht alle Informationen sind eingegeben!</string>
+    <string name="registerTooShortPassword">Passwort soll mindestens 6 Zeichen enthalten!</string>
+
+</resources>

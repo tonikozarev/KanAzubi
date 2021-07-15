@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.techgeek.kanazubi.Register">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="240dp"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@+id/imgView_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_dp" />
+
+        <RelativeLayout
+            android:id="@+id/rellayReg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgView_logo"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/tv_register"
+                android:textColor="@color/color_white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linlayLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_register"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/addEmail"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/addEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/et_loginfields"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxLength="62"
+                        android:inputType="textEmailAddress"
+                        android:labelFor="@+id/addEmail"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/addName"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/addName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/et_loginfields"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxLength="30"
+                        android:inputType="text"
+                        android:labelFor="@+id/addName"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/addPassword"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/addPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/et_loginfields"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxLength="30"
+                        android:inputType="textPassword"
+                        android:labelFor="@+id/addPassword"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/confirmPassword"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/confirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/et_loginfields"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxLength="30"
+                        android:inputType="textPassword"
+                        android:labelFor="@+id/confirmPassword"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        tools:ignore="LabelFor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linlayLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/signin_btn"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="7dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="7dp"
+                android:text="@string/registerBtn"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/goToLoginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/signin_btn"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="7dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="7dp"
+                android:text="@string/goToLoginBtn"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayReg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+</RelativeLayout>

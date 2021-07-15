@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:bottomLeftRadius="45dp"
+        android:bottomRightRadius="45dp"
+        android:topLeftRadius="45dp"
+        android:topRightRadius="45dp" />
+
+    <stroke
+        android:width="5dp"
+        android:color="@color/color_cirlceBtn" />
+
+</shape>

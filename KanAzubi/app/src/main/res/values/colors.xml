@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_overlay">#66000000</color>
+
+    <!-- added  -->
+    <color name="color_bg">#944444</color>
+    <color name="color_red">#973324</color>
+    <color name="color_darkgray">#594B4B</color>
+    <color name="color_cirlceBtn">#990909</color>
+    <color name="color_white">#fff</color>
+    <color name="color_almostwhite">#dedde5</color>
+    <color name="color_verified">#367820</color>
+
+
+</resources>

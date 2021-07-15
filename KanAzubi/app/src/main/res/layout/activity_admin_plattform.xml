@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.techgeek.kanazubi.AdminPlattform">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="240dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@+id/imgView_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_dp" />
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imgView_logo"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/et_taskTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/boarder_info_box"
+                android:textAlignment="center"
+                android:maxLength="60"
+                android:maxLines="1"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/et_taskTitle"
+                android:textColor="@color/color_almostwhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_taskReleased"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/et_taskTitle"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/boarder_info_box"
+                android:gravity="center"
+                android:maxLength="10"
+                android:paddingEnd="45dp"
+                android:paddingStart="45dp"
+                android:text="@string/et_taskReleased"
+                android:textAlignment="center"
+                android:textColor="@color/color_almostwhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rellay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_taskReleased"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_taskTeam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/boarder_info_box"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:paddingEnd="25dp"
+                    android:paddingStart="25dp"
+                    android:maxLength="10"
+                    android:text="@string/et_taskTeam"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_almostwhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/et_taskStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toStartOf="@id/et_taskTeam"
+                    android:background="@drawable/boarder_info_box"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:paddingEnd="25dp"
+                    android:paddingStart="25dp"
+                    android:text="@string/et_taskStatus"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_almostwhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_taskDescr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rellay"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boarder_info_box"
+                android:paddingBottom="22dp"
+                android:paddingEnd="27dp"
+                android:paddingStart="27dp"
+                android:paddingTop="18dp"
+                android:scrollbars="vertical"
+                android:text="@string/et_taskDescr"
+                android:textAlignment="viewStart"
+                android:textColor="@color/color_almostwhite"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addTaskBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/signin_btn"
+            android:gravity="center"
+            android:text="@string/addTaskBtn"
+            android:textColor="@color/color_almostwhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
